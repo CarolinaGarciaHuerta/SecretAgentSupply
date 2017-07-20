@@ -1,0 +1,160 @@
+html{
+	font-size: 18px;
+	font-family: Helvetica;
+}
+
+/*Logo Banner */
+
+.logo-banner {
+	background-color: black;
+}
+
+.logo-banner-content {
+	max-width: 960px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+
+.logo-banner-content img {
+	height: 1.5rem;
+	padding-left: 0.5rem;
+	padding-right: 1rem;
+}
+
+
+.logo-banner-content h3{
+	font-size: 1rem;
+	color: white;
+	padding-top: 0.66rem;
+	padding-bottom: 0.66rem;
+}
+
+/*Main Banner*/
+
+.main-banner{
+  background-image: url("../images/main-banner.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:25rem;
+  margin: auto;
+}
+
+.main-banner .content-box{
+	background-color: black;
+	padding-top: 2rem;
+	padding-left: 3rem;
+	padding-bottom: 3rem;
+	width: 20rem;
+	height:auto;
+	position: relative;
+
+}
+
+.main-banner .content-box h3 {
+	font-size: 1rem;
+	font-weight: bold;
+	color: white;
+    
+}
+
+.main-banner .content-box h1 {
+    color: white;
+    font-size:  2rem;
+    font-weight: bold;
+    padding-top: 0.25rem;
+}
+
+/*Nav Bar*/
+
+.nav-bar {
+	background-color: firebrick;
+	padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+}
+
+.nav-bar a {  
+	color: white;
+	text-decoration: none;	
+}
+
+/*Gallery and Info*/
+
+.gallery-and-info-section {
+	max-width: 960px;
+	
+}
+
+
+.gallery {
+    width: 960px;
+    margin: auto;
+	display: flex;
+	align-items: center;
+    padding-top: 3rem;
+    
+}
+
+.gallery .item-box {
+	width: 30%;
+	border: 4px solid black;
+	padding
+}
+
+
+.item-box .item-image img {
+	height: 9rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.item-box .item-text {
+	background-color: black;
+	color: white;
+}
+
+.item-box .item-text p {
+	padding-top:  0.5rem;
+	padding-bottom:  0.5rem;
+
+}
+
+.business-info {
+	width: 960px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+    
+}
+
+.business-info .info {
+	width: 35%;
+    padding-top: 0.75rem;
+	padding-bottom: 0.75rem;
+    
+}
+
+
+.info .text {
+	background-color: black;
+	color: white;
+	
+}
+
+/*Footer*/
+
+.footer {
+	background-color: black;
+	color: white;
+	height: 5rem;
+	text-align: left;
+	padding-top: 2rem;
+}
+
+.footer .content {
+    width: 960px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
