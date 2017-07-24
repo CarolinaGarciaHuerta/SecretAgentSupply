@@ -74,6 +74,23 @@ html{
     padding-top: 0.25rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    height: 15rem;
+  }
+  .content-box {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .content-box h3 {
+    font-size: .77rem;
+  }
+  .content-box h1 {
+    font-size: 1rem;
+  }
+}
+
 /*Nav Bar*/
 
 nav {
@@ -183,8 +200,21 @@ nav .container {
   }
  }
 
+@media only screen and (max-width: 470px){
+	.gallery {
+       flex-wrap: wrap;
+	}
 
+	.item-box {
+		width: 90%;
+		margin: auto;
+	}
 
+	.item-box.watch{
+		display: none;
+	}
+}
+	
 
 /*Bussines Info copied from CodeAcademy*/
 
@@ -213,6 +243,17 @@ div {
 	background-color: black;
 	color: white;
 	padding: 1em 2em;
+}
+
+@media only screen and (max-width: 470px) {
+	.business-info {
+		flex-wrap: wrap;
+	}
+
+	.info {
+		width: 90%;
+		margin: 0.5rem auto;
+	}
 }
 
 
@@ -266,6 +307,11 @@ div {
 	padding-bottom: 4rem;
 }
 
+@media only screen and (max-width: 470px){
+	.footer {
+      text-align: center;
+	}
+}
 
 
 
