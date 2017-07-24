@@ -79,7 +79,14 @@ html{
 nav {
 	background-color: firebrick;
 	color: white;
-	display:flex ;
+
+}
+
+nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.75rem 0;
 }
 
 nav .container {
@@ -90,19 +97,28 @@ nav .container {
     justify-content: space-between;
     padding: 0.75em 0;
     list-style: none;
-
 }
 
-.nav-bar .container ul{
-    	
-    
+.mobile-nav li{
+	display: none;
 }
 
 .nav-bar li{  
-	
 	text-decoration: none;
 	display: list-item;
+}
 
+/*no ide why the .mobile-nav li {} code doesnt work and the padding is wrong*/
+@media only screen and (max-width: 1024px){
+    
+    nav ul li{ 
+		display: none;
+	}
+
+	.mobile-nav li{
+		display: block;
+		align-item: center;
+	}
 }
 
 
@@ -154,8 +170,21 @@ nav .container {
 .item-box .item-text p {
 	padding-top:  0.5rem;
 	padding-bottom:  0.5rem;
-
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+  .gallery .item-box {
+    width: 47%;
+  }
+  .item-box.glasses {
+  	display: none;
+  }
+ }
+
+
+
 
 /*Bussines Info copied from CodeAcademy*/
 
@@ -236,4 +265,16 @@ div {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
