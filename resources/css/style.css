@@ -77,18 +77,24 @@ html{
 @media only screen and (max-width: 470px) {
   .main-banner {
     height: 15rem;
+    display: block;
+    margin: 0;
+    
   }
-  .content-box {
-    width: 100%;
+  .main-banner .content-box {
+    max-width: 470px;
     padding: 1rem 2rem;
     top: 10rem;
   }
-  .content-box h3 {
+  .main-banner .content-box h3 {
     font-size: .77rem;
+    padding: 0.5rem auto;
   }
-  .content-box h1 {
+  .main-banner .content-box h1 {
     font-size: 1rem;
   }
+
+ 
 }
 
 /*Nav Bar*/
@@ -116,6 +122,11 @@ nav .container {
     list-style: none;
 }
 
+.mobile-nav.container {
+	display: none;
+}
+
+
 .mobile-nav li{
 	display: none;
 }
@@ -125,16 +136,36 @@ nav .container {
 	display: list-item;
 }
 
-/*no ide why the .mobile-nav li {} code doesnt work and the padding is wrong*/
 @media only screen and (max-width: 1024px){
     
+    nav .container {
+    	width: 100%;
+    	display: flex;
+    	justify-content: center;
+    	padding: 0.75rem 0;
+    }
+
+    nav ul {
+    	display: none;
+    }
+    
+
     nav ul li{ 
+		display: none;
+	}
+
+	ul.container {
 		display: none;
 	}
 
 	.mobile-nav li{
 		display: block;
 		align-item: center;
+	}
+
+	.mobile-nav.container {
+		display: block;
+		text-align: center;
 	}
 }
 
@@ -202,16 +233,21 @@ nav .container {
 
 @media only screen and (max-width: 470px){
 	.gallery {
-       flex-wrap: wrap;
+       display: flex;
+       flex-wrap: wrap;  
 	}
 
-	.item-box {
+	.gallery .item-box {
 		width: 90%;
 		margin: auto;
 	}
 
 	.item-box.watch{
 		display: none;
+	}
+
+	.gallery-and-info-section{
+		max-width: 470px;
 	}
 }
 	
@@ -245,17 +281,33 @@ div {
 	padding: 1em 2em;
 }
 
-@media only screen and (max-width: 470px) {
-	.business-info {
-		flex-wrap: wrap;
-	}
-
-	.info {
-		width: 90%;
-		margin: 0.5rem auto;
-	}
+.mobile-cont{
+	display: none;
 }
 
+@media only screen and (max-width: 470px) {
+	.container{
+		 max-width: 470px;
+		 display: block;
+		 
+
+	}
+
+	.business-info {
+	   display: flex;
+       flex-wrap: wrap;
+       max-width: 90%;	
+	}
+
+    .info {
+    	margin-bottom: 0.5rem;
+    	width: 90%
+    }
+	
+	.container .business-info {
+		display: center;
+	}
+}
 
 /* Bussiness I wrote but didnt work...
 
